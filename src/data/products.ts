@@ -44,5 +44,51 @@ export const featuredProducts: Product[] = [
     image: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?q=80&w=1200&auto=format&fit=crop",
     badge: "Seasonal",
     deliveryTime: "Same-day delivery available"
+  },
+  {
+    id: "handtied-white-meadow",
+    name: "White Meadow Classic Wrap",
+    category: "Handtied Bouquets",
+    price: 48.0,
+    currency: "£",
+    description: "Crisp white Ecuadorian roses, delicate veronica, white lisianthus, and fresh scented Lake District greenery.",
+    image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=1200&auto=format&fit=crop",
+    badge: "Popular",
+    deliveryTime: "Same-day delivery available"
+  },
+  {
+    id: "botanical-foliage-bundle",
+    name: "Woodland Eucalyptus & Foliage Wrap",
+    category: "Handtied Bouquets",
+    price: 32.0,
+    currency: "£",
+    description: "Wild textured British foliage, seeded eucalyptus, olive stems, and seasonal dried botanical accents.",
+    image: "https://images.unsplash.com/photo-1508784411316-02b8cd4d3a3a?q=80&w=1200&auto=format&fit=crop",
+    badge: "Studio Favourite",
+    deliveryTime: "Long-lasting vase stems"
+  },
+  {
+    id: "gift-box-blush-peony",
+    name: "Blush Garden Gift Box",
+    category: "Gift Box Arrangements",
+    price: 38.0,
+    currency: "£",
+    description: "Pastel roses, seasonal blooms, and fresh scented greenery tucked inside an aqua-pack presentation gift box.",
+    image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop",
+    badge: "Aqua-Pack",
+    deliveryTime: "Arrives in water bubble"
+  },
+  {
+    id: "hat-box-grand-celebration",
+    name: "Monochrome Rose Hat Box",
+    category: "Hat Box Designs",
+    price: 55.0,
+    currency: "£",
+    description: "Pure ivory and blush garden roses arranged tightly with delicate trailing foliage in a bespoke keepsake box.",
+    image: "https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=1200&auto=format&fit=crop",
+    badge: "Signature",
+    deliveryTime: "No vase required"
   }
 ];
+
+export const allProducts: Product[] = featuredProducts;

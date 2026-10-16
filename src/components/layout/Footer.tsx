@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { businessInfo } from "@/data/businessInfo";
 import { footerLinks } from "@/data/navigation";
 import { Phone, Mail, MapPin, Heart, ArrowUp } from "lucide-react";
@@ -11,14 +12,14 @@ export function Footer() {
           
           {/* Column 1: Brand Info & Studio Address */}
           <div className="lg:col-span-2 space-y-3.5">
-            <a href="#top" className="inline-block focus-visible:outline-none group">
+            <Link href="/" className="inline-block focus-visible:outline-none group">
               <span className="font-serif text-2xl tracking-[0.24em] uppercase text-[#1F2E24] font-light transition-colors group-hover:text-[#C48273]">
                 Efflorescence
               </span>
               <span className="block text-[9px] tracking-[0.32em] uppercase text-[#8A9A86] font-medium -mt-1">
                 Florist · Barrow-in-Furness
               </span>
-            </a>
+            </Link>
 
             <p className="text-xs text-[#5C5855] leading-relaxed max-w-sm font-light">
               Award-winning independent floral studio specializing in bespoke weddings, daily bouquets, and workshops in Cumbria.
@@ -58,9 +59,9 @@ export function Footer() {
             <ul className="space-y-2 text-xs text-[#5C5855] font-light">
               {footerLinks.shop.map((link, idx) => (
                 <li key={idx}>
-                  <a href={link.href} className="hover:text-[#1F2E24] transition-colors">
+                  <Link href={link.href} className="hover:text-[#1F2E24] transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,9 +75,9 @@ export function Footer() {
             <ul className="space-y-2 text-xs text-[#5C5855] font-light">
               {footerLinks.services.map((link, idx) => (
                 <li key={idx}>
-                  <a href={link.href} className="hover:text-[#1F2E24] transition-colors">
+                  <Link href={link.href} className="hover:text-[#1F2E24] transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

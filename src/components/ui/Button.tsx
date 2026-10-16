@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "terracotta" | "dark-outline";
@@ -43,9 +44,9 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} className={combinedClasses}>
+      <Link href={href} className={combinedClasses}>
         {children}
-      </a>
+      </Link>
     );
   }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { navItems } from "@/data/navigation";
 import { businessInfo } from "@/data/businessInfo";
 import { Button } from "@/components/ui/Button";
@@ -38,8 +39,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Editorial Wordmark Logo */}
-          <a
-            href="#top"
+          <Link
+            href="/"
             className="flex flex-col items-start group focus-visible:outline-none"
             aria-label="Efflorescence Florist Home"
           >
@@ -49,18 +50,18 @@ export function Navbar() {
             <span className="text-[9px] tracking-[0.32em] uppercase text-[#8A9A86] font-medium -mt-1">
               Barrow-in-Furness · Cumbria
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-8" aria-label="Main Navigation">
+          <nav className="hidden lg:flex items-center space-x-7" aria-label="Main Navigation">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className="text-[11px] uppercase tracking-[0.2em] text-[#5C5855] hover:text-[#1F2E24] transition-colors relative py-1.5 font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-[#C48273] hover:after:w-full after:transition-all after:duration-300"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -74,7 +75,7 @@ export function Navbar() {
               <Phone className="w-4 h-4" />
             </a>
 
-            <Button href="#shop" variant="primary" size="sm" className="shadow-xs hover:shadow-md">
+            <Button href="/shop" variant="primary" size="sm" className="shadow-xs hover:shadow-md rounded-full">
               <ShoppingBag className="w-3.5 h-3.5 mr-2 text-[#C48273]" />
               Order Flowers
             </Button>
@@ -82,7 +83,7 @@ export function Navbar() {
 
           {/* Mobile Right Controls */}
           <div className="flex items-center space-x-2.5 lg:hidden">
-            <Button href="#shop" variant="primary" size="sm" className="px-4 py-2 text-[10px]">
+            <Button href="/shop" variant="primary" size="sm" className="px-4 py-2 text-[10px] rounded-full">
               Order
             </Button>
 
@@ -103,14 +104,14 @@ export function Navbar() {
         <div className="lg:hidden mx-4 mt-2 mb-4 bg-white/95 backdrop-blur-md border border-[#EBE6DD] rounded-2xl p-5 shadow-2xl animate-fade-in">
           <nav className="flex flex-col space-y-2" aria-label="Mobile Navigation">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="px-3.5 py-2.5 rounded-xl text-xs uppercase tracking-[0.18em] font-medium text-[#1F2E24] hover:bg-[#F8ECE9] hover:text-[#AA6B5D] transition-all"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
