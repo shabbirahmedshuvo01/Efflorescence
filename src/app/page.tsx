@@ -3,10 +3,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { TrustSection } from "@/components/sections/TrustSection";
 import { FeaturedProductsSection } from "@/components/sections/FeaturedProductsSection";
-import { WeddingPackagesSection } from "@/components/sections/WeddingPackagesSection";
-import { WorkshopsSection } from "@/components/sections/WorkshopsSection";
+import { WeddingPreviewSection } from "@/components/sections/WeddingPreviewSection";
+import { WorkshopsPreviewSection } from "@/components/sections/WorkshopsPreviewSection";
 import { BereavementSection } from "@/components/sections/BereavementSection";
-import { PartiesSection } from "@/components/sections/PartiesSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactDeliverySection } from "@/components/sections/ContactDeliverySection";
 import { Footer } from "@/components/layout/Footer";
@@ -29,37 +28,32 @@ export default function Home() {
       <Navbar />
 
       <main id="main-content" className="flex-1">
-        {/* 3. Large Editorial Hero */}
+        {/* 3. Hero Introduction & Direct CTAs */}
         <HeroSection />
 
-        {/* 4. Verified Trust & Recognition */}
+        {/* 4. Verified Trust Strip */}
         <TrustSection />
 
-        {/* 5. Featured Flower Collections & Product Cards */}
+        {/* 5. Featured Flowers (Curated 4 Cards + Browse All CTA) */}
         <FeaturedProductsSection />
 
-        {/* 6. Wedding Flowers Showcase & Three Curated Packages */}
-        <WeddingPackagesSection />
+        {/* 6. Wedding Flowers & Packages Preview */}
+        <WeddingPreviewSection />
 
-        {/* 7. Events & Workshops Section */}
-        <WorkshopsSection />
+        {/* 7. Workshops & Celebrations Preview */}
+        <WorkshopsPreviewSection />
 
-        {/* 8. Bereavement & Sympathy Tributes Section */}
+        {/* 8. Sympathy & Bereavement Tributes Callout */}
         <BereavementSection />
 
-        {/* 9. Baby Showers & Private Celebrations */}
-        <PartiesSection />
-
-        {/* 10. About Efflorescence Studio Craft */}
+        {/* 9. About Efflorescence Studio Craft */}
         <AboutSection />
 
-        {/* 11. Testimonials: Omitted per prompt rule as unverified quotes are not present on live site */}
-
-        {/* 12. Contact, Studio Visit & Local Delivery Information */}
+        {/* 10. Contact, Studio Visit & Local Delivery Information */}
         <ContactDeliverySection />
       </main>
 
-      {/* 13. Comprehensive Footer */}
+      {/* 11. Comprehensive Footer */}
       <Footer />
     </div>
   );
