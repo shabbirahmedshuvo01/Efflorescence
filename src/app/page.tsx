@@ -13,11 +13,11 @@ import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <div id="top" className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#242220]">
+    <div id="top" className="min-h-screen flex flex-col bg-white text-[#1A1A1A]">
       {/* Accessible Skip Link */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#1F2E24] focus:text-[#FBF9F5] focus:text-xs focus:uppercase focus:tracking-wider focus:outline-none focus:ring-2 focus:ring-[#C48273]"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-[#263B2D] focus:text-white focus:text-xs focus:uppercase focus:tracking-wider focus:outline-none focus:ring-2 focus:ring-[#C48273]"
       >
         Skip to main content
       </a>

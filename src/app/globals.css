@@ -36,8 +36,8 @@ html {
 }
 
 body {
-  background-color: #FBF9F5;
-  color: #242220;
+  background-color: #FFFFFF;
+  color: #1A1A1A;
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, .font-serif {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #FBF9F5;
+  background: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
   background: #B6C3B3;

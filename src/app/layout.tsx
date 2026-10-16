@@ -46,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${jakarta.variable} scroll-smooth`}>
-      <body className="min-h-screen flex flex-col font-sans bg-[#FBF9F5] text-[#242220]">
+      <body className="min-h-screen flex flex-col font-sans bg-white text-[#1A1A1A]">
         {children}
       </body>
     </html>

@@ -29,10 +29,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-40 transition-all duration-500 ${
+      className={`sticky top-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#FBF9F5]/92 backdrop-blur-md shadow-sm border-b border-[#EBE6DD]/80 py-1"
-          : "bg-[#FBF9F5] border-b border-[#EBE6DD]/50 py-2.5"
+           ? "bg-white/95 backdrop-blur-md shadow-xs border-b border-[#EBE6DD]/80 py-1.5"
+           : "bg-white border-b border-[#EBE6DD]/60 py-2.5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
