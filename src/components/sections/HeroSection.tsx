@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles, MapPin } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white pt-12 pb-20 md:pt-20 md:pb-28 border-b border-[#EBE6DD]/60">
+    <section className="relative overflow-hidden bg-white pt-8 pb-12 md:pt-14 md:pb-16 border-b border-[#EBE6DD]/60">
       {/* Decorative funky subtle background graphic (whimsical floral outline) */}
       <div 
         aria-hidden="true" 
@@ -17,12 +17,12 @@ export function HeroSection() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           {/* Left Editorial Narrative Column */}
           <div className="lg:col-span-7 flex flex-col items-start animate-fade-in">
             {/* Pill with funky stamp style */}
-            <div className="inline-flex items-center gap-2 mb-6">
+            <div className="inline-flex items-center gap-2 mb-4 sm:mb-5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium tracking-[0.16em] uppercase bg-white border border-[#EBE6DD] text-[#263B2D] shadow-xs">
                 <Sparkles className="w-3 h-3 text-[#C48273]" />
                 Award-Winning Cumbria Florist
@@ -34,7 +34,7 @@ export function HeroSection() {
             </div>
 
             {/* Editorial Funky Headline: Playful serif mix */}
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] leading-[0.98] text-[#1F2E24] tracking-tight font-light mb-6">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.75rem] leading-[1] text-[#1F2E24] tracking-tight font-light mb-4 sm:mb-5">
               Fresh flowers, <br />
               <span className="italic font-normal text-[#C48273] underline decoration-[#ECD2CC] decoration-wavy decoration-1 underline-offset-8">
                 wildly arranged.
@@ -42,12 +42,12 @@ export function HeroSection() {
             </h1>
 
             {/* Concise Supporting Copy: 1 short sentence per brief */}
-            <p className="text-base sm:text-lg text-[#5C5855] max-w-lg leading-relaxed font-light mb-8">
+            <p className="text-base sm:text-lg text-[#5C5855] max-w-lg leading-relaxed font-light mb-6 sm:mb-7">
               Bespoke wedding florals, thoughtful daily bouquets, and creative workshops handcrafted in our Barrow studio.
             </p>
 
             {/* Primary & Secondary Action CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
               <Button href="/shop" variant="primary" size="lg" className="group rounded-full shadow-xs hover:shadow-md transition-all">
                 Explore Flowers
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" />
@@ -59,25 +59,25 @@ export function HeroSection() {
             </div>
 
             {/* Crisp 3-stat strip with minimal funky typography */}
-            <div className="mt-12 pt-8 border-t border-[#EBE6DD] grid grid-cols-3 gap-6 w-full max-w-md">
+            <div className="mt-8 pt-6 border-t border-[#EBE6DD] grid grid-cols-3 gap-4 sm:gap-6 w-full max-w-md">
               <div>
-                <span className="font-serif text-2xl sm:text-3xl font-light text-[#1F2E24] tracking-tight block">
+                <span className="font-serif text-xl sm:text-2xl font-light text-[#1F2E24] tracking-tight block">
                   Same-Day
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.18em] text-[#8A9A86] font-medium mt-0.5 block">
                   Local Delivery
                 </span>
               </div>
-              <div className="border-l border-[#EBE6DD] pl-5">
-                <span className="font-serif text-2xl sm:text-3xl font-light text-[#1F2E24] tracking-tight block">
+              <div className="border-l border-[#EBE6DD] pl-4 sm:pl-5">
+                <span className="font-serif text-xl sm:text-2xl font-light text-[#1F2E24] tracking-tight block">
                   From £500
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.18em] text-[#8A9A86] font-medium mt-0.5 block">
                   Wedding Sets
                 </span>
               </div>
-              <div className="border-l border-[#EBE6DD] pl-5">
-                <span className="font-serif text-2xl sm:text-3xl font-light text-[#1F2E24] tracking-tight block">
+              <div className="border-l border-[#EBE6DD] pl-4 sm:pl-5">
+                <span className="font-serif text-xl sm:text-2xl font-light text-[#1F2E24] tracking-tight block">
                   Abbey House
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.18em] text-[#8A9A86] font-medium mt-0.5 block">
@@ -92,13 +92,13 @@ export function HeroSection() {
             <div className="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
               
               {/* Funky floating circular decorative badge stamp */}
-              <div className="absolute -top-5 -left-5 z-20 hidden sm:flex flex-col items-center justify-center w-20 h-20 rounded-full bg-white border border-[#EBE6DD] shadow-md text-[#263B2D] rotate-[-8deg] hover:rotate-0 transition-transform duration-300">
+              <div className="absolute -top-4 -left-4 z-20 hidden sm:flex flex-col items-center justify-center w-16 h-16 rounded-full bg-white border border-[#EBE6DD] shadow-md text-[#263B2D] rotate-[-8deg] hover:rotate-0 transition-transform duration-300">
                 <span className="font-serif text-xs font-medium italic">Hand</span>
                 <span className="text-[8px] uppercase tracking-[0.2em] text-[#C48273] font-semibold">Tied</span>
               </div>
 
               {/* Main Primary Image with slight organic asymmetric corners */}
-              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-lg bg-[#F8ECE9]/30 border border-[#EBE6DD]">
+              <div className="relative aspect-[4/5] max-h-[460px] w-full overflow-hidden rounded-[2rem] shadow-lg bg-[#F8ECE9]/30 border border-[#EBE6DD]">
                 <Image
                   src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=1200&auto=format&fit=crop"
                   alt="Efflorescence handcrafted bespoke floral bouquet"
@@ -110,14 +110,14 @@ export function HeroSection() {
               </div>
 
               {/* Secondary Overlapping Funky Mini Card */}
-              <div className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-6 z-20 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-[#EBE6DD] shadow-lg max-w-[200px] sm:max-w-[220px] rotate-[3deg] hover:rotate-0 transition-transform duration-300">
+              <div className="absolute -bottom-5 -right-3 sm:-bottom-6 sm:-right-4 z-20 bg-white/95 backdrop-blur-md p-3 sm:p-3.5 rounded-2xl border border-[#EBE6DD] shadow-lg max-w-[190px] sm:max-w-[210px] rotate-[3deg] hover:rotate-0 transition-transform duration-300">
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-2 h-2 rounded-full bg-[#C48273] animate-pulse" />
                   <span className="text-[9px] uppercase tracking-[0.18em] text-[#8A9A86] font-semibold">
                     Fresh In Studio
                   </span>
                 </div>
-                <p className="font-serif text-sm text-[#1F2E24] leading-tight">
+                <p className="font-serif text-xs sm:text-sm text-[#1F2E24] leading-tight">
                   Hand-gathered daily from premium growers
                 </p>
               </div>

@@ -8,11 +8,11 @@ export function FeaturedProductsSection() {
   const displayProducts = featuredProducts.slice(0, 4);
 
   return (
-    <section id="shop" className="py-12 md:py-16 bg-white border-b border-[#EBE6DD]/60">
+    <section id="shop" className="py-10 md:py-14 bg-white border-b border-[#EBE6DD]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-10 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="w-2 h-2 rounded-full bg-[#C48273]" />

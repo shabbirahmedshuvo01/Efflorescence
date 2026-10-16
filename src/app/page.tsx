@@ -1,7 +1,6 @@
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Navbar } from "@/components/layout/Navbar";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { TrustSection } from "@/components/sections/TrustSection";
 import { FeaturedProductsSection } from "@/components/sections/FeaturedProductsSection";
 import { WeddingPreviewSection } from "@/components/sections/WeddingPreviewSection";
 import { WorkshopsPreviewSection } from "@/components/sections/WorkshopsPreviewSection";
@@ -31,29 +30,26 @@ export default function Home() {
         {/* 3. Hero Introduction & Direct CTAs */}
         <HeroSection />
 
-        {/* 4. Verified Trust Strip */}
-        <TrustSection />
-
-        {/* 5. Featured Flowers (Curated 4 Cards + Browse All CTA) */}
+        {/* 4. Featured Flowers (Curated 4 Cards + Browse All CTA) */}
         <FeaturedProductsSection />
 
-        {/* 6. Wedding Flowers & Packages Preview */}
+        {/* 5. Wedding Flowers & Packages Preview */}
         <WeddingPreviewSection />
 
-        {/* 7. Workshops & Celebrations Preview */}
+        {/* 6. Workshops & Celebrations Preview */}
         <WorkshopsPreviewSection />
 
-        {/* 8. Sympathy & Bereavement Tributes Callout */}
+        {/* 7. Sympathy & Bereavement Tributes Callout */}
         <BereavementSection />
 
-        {/* 9. About Efflorescence Studio Craft */}
+        {/* 8. About Efflorescence Studio Preview */}
         <AboutSection />
 
-        {/* 10. Contact, Studio Visit & Local Delivery Information */}
+        {/* 9. Contact, Studio Visit & Local Delivery Information */}
         <ContactDeliverySection />
       </main>
 
-      {/* 11. Comprehensive Footer */}
+      {/* 10. Footer */}
       <Footer />
     </div>
   );
