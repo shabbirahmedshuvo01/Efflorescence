@@ -61,7 +61,7 @@ export function PartiesSection() {
               ))}
             </div>
 
-            <Button href="#contact" variant="primary" size="md" className="rounded-full">
+            <Button href="/workshops#enquire" variant="primary" size="md" className="rounded-full">
               Enquire About Styling
             </Button>
           </div>

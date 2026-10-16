@@ -110,10 +110,10 @@ export function WorkshopsSection() {
 
             {/* Actions */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
-              <Button href="#contact" variant="primary" size="md" className="rounded-full">
+              <Button href="/workshops#enquire" variant="primary" size="md" className="rounded-full">
                 Reserve Workshop Spot
               </Button>
-              <Button href="#contact" variant="outline" size="md" className="rounded-full">
+              <Button href="/workshops#enquire" variant="outline" size="md" className="rounded-full">
                 Group Enquiry
               </Button>
             </div>

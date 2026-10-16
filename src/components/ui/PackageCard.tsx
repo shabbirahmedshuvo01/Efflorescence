@@ -77,7 +77,7 @@ export function PackageCard({ pkg }: PackageCardProps) {
         </div>
 
         <Button
-          href="#contact"
+          href="/weddings#enquire"
           variant={pkg.featured ? "primary" : "outline"}
           size="md"
           className="w-full justify-center rounded-full"

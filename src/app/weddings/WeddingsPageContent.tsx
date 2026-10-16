@@ -227,7 +227,7 @@ export function WeddingsPageContent() {
                 Thank You, {formData.name || "friend"}
               </h3>
               <p className="text-xs sm:text-sm text-[#5C5855] max-w-md leading-relaxed mb-6 font-light">
-                Your wedding enquiry has been registered in this prototype. We look forward to creating your wedding flowers.
+                Your wedding consultation details have been recorded in this interactive prototype. Note: In production, this form will connect directly to the studio email.
               </p>
               <Button
                 variant="outline"

@@ -46,14 +46,14 @@ export function HeroSection() {
               Bespoke wedding florals, thoughtful daily bouquets, and creative workshops handcrafted in our Barrow studio.
             </p>
 
-            {/* Clear Primary Action & Funky Mini Pill */}
+            {/* Primary & Secondary Action CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
-              <Button href="#shop" variant="primary" size="lg" className="group rounded-full shadow-xs hover:shadow-md transition-all">
+              <Button href="/shop" variant="primary" size="lg" className="group rounded-full shadow-xs hover:shadow-md transition-all">
                 Explore Flowers
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" />
               </Button>
 
-              <Button href="#weddings" variant="outline" size="lg" className="rounded-full">
+              <Button href="/weddings" variant="outline" size="lg" className="rounded-full">
                 Weddings &amp; Events
               </Button>
             </div>

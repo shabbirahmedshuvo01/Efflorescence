@@ -93,12 +93,29 @@ export function ShopCatalogClient() {
           </div>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
-          {filtered.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {/* Products Grid & Empty State */}
+        {filtered.length === 0 ? (
+          <div className="text-center py-16 px-4 bg-white rounded-3xl border border-[#EBE6DD] mb-16">
+            <p className="font-serif text-2xl text-[#1F2E24] mb-2 font-light">
+              No floral designs found in this category.
+            </p>
+            <p className="text-xs text-[#5C5855] font-light mb-6">
+              Please choose another collection or contact our studio for custom stems.
+            </p>
+            <button
+              onClick={() => setActiveCategory("All")}
+              className="px-5 py-2.5 rounded-full text-[11px] uppercase tracking-wider font-medium bg-[#263B2D] text-white hover:bg-[#1C2C22] transition-colors cursor-pointer"
+            >
+              View All Flowers
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16" aria-live="polite">
+            {filtered.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
 
         {/* Value Highlights & Ordering Notice */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 rounded-3xl bg-white border border-[#EBE6DD] shadow-xs mb-12">

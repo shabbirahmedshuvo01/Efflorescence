@@ -83,7 +83,7 @@ export function WeddingPackagesSection() {
                 <span className="text-xs text-[#8E8A85] font-light">
                   Min spend £150 · Dates subject to confirmation
                 </span>
-                <Button href="#contact" variant="primary" size="md" className="rounded-full">
+                <Button href="/weddings#enquire" variant="primary" size="md" className="rounded-full">
                   <HeartHandshake className="w-4 h-4 mr-2 text-[#C48273]" />
                   Check Wedding Date
                 </Button>

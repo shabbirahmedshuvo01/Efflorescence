@@ -258,7 +258,7 @@ export function WorkshopsPageContent() {
                 Thank You, {formData.name || "friend"}
               </h3>
               <p className="text-xs sm:text-sm text-[#5C5855] max-w-md leading-relaxed mb-6 font-light">
-                Your reservation request has been received in this prototype preview. We will confirm details directly.
+                Your reservation request has been recorded in this interactive prototype preview. In production, real-time ticket confirmation will be emailed.
               </p>
               <Button
                 variant="outline"
