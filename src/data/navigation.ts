@@ -24,5 +24,42 @@ export const footerLinks = {
     { label: "Wreath Masterclasses", href: "/workshops" },
     { label: "Events & Styling", href: "/workshops" },
     { label: "Funeral Tributes", href: "/#bereavements" }
+  ],
+  legal: [
+    { label: "Terms & Conditions", href: "/terms" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Cookie Policy", href: "/cookies" }
   ]
 };
+
+export interface SocialLink {
+  platform: "Instagram" | "Facebook" | "Pinterest";
+  url: string | null;
+  ariaLabel: string;
+  statusNote: string;
+}
+
+/**
+ * Social media links are stored centrally and kept null until the client (Sajjad) confirms official URLs.
+ * Icons render in an inactive state without external navigation until an official URL is assigned.
+ */
+export const socialLinks: SocialLink[] = [
+  {
+    platform: "Instagram",
+    url: null,
+    ariaLabel: "Efflorescence on Instagram (official link awaiting client confirmation)",
+    statusNote: "Awaiting confirmation"
+  },
+  {
+    platform: "Facebook",
+    url: null,
+    ariaLabel: "Efflorescence on Facebook (official link awaiting client confirmation)",
+    statusNote: "Awaiting confirmation"
+  },
+  {
+    platform: "Pinterest",
+    url: null,
+    ariaLabel: "Efflorescence on Pinterest (official link awaiting client confirmation)",
+    statusNote: "Awaiting confirmation"
+  }
+];
