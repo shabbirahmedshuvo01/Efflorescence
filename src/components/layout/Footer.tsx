@@ -11,16 +11,26 @@ function InstagramIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
-      strokeWidth="1.75"
+      stroke="url(#footer-instagram-gradient)"
+      strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
       aria-hidden="true"
     >
+      <defs>
+        <linearGradient id="footer-instagram-gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#833AB4" />
+          <stop offset="25%" stopColor="#C13584" />
+          <stop offset="50%" stopColor="#E1306C" />
+          <stop offset="75%" stopColor="#FD1D1D" />
+          <stop offset="90%" stopColor="#F56040" />
+          <stop offset="100%" stopColor="#FCAF45" />
+        </linearGradient>
+      </defs>
       <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+      <circle cx="17.5" cy="6.5" r="1.25" fill="url(#footer-instagram-gradient)" stroke="none" />
     </svg>
   );
 }
@@ -30,11 +40,7 @@ function FacebookIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.75"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="#1877F2"
       className={className}
       aria-hidden="true"
     >
@@ -48,7 +54,7 @@ function PinterestIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="#BD081C"
       className={className}
       aria-hidden="true"
     >
@@ -125,9 +131,9 @@ export function Footer() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={item.ariaLabel}
-                        className="p-2 rounded-full bg-[#FAF8F5] text-[#263B2D] border border-[#EBE6DD] hover:bg-[#F8ECE9] hover:text-[#C48273] hover:border-[#ECD2CC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C48273]"
+                        className="p-2 rounded-full bg-[#FAF8F5] border border-[#EBE6DD] hover:bg-white hover:border-[#C48273]/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C48273] shadow-2xs"
                       >
-                        <Icon className="w-3.5 h-3.5" />
+                        <Icon className="w-3.5 h-3.5 shrink-0" />
                         <span className="sr-only">{item.platform}</span>
                       </a>
                     );
@@ -139,9 +145,9 @@ export function Footer() {
                       role="img"
                       aria-label={item.ariaLabel}
                       title={`${item.platform} (official profile awaiting client confirmation)`}
-                      className="group relative inline-flex items-center justify-center p-2 rounded-full bg-[#FAF8F5] text-[#8E8A85] border border-[#EBE6DD]/80 cursor-default select-none transition-colors hover:border-[#C48273]/40 hover:text-[#5C5855]"
+                      className="group relative inline-flex items-center justify-center p-2 rounded-full bg-[#FAF8F5] border border-[#EBE6DD] cursor-default select-none transition-colors hover:bg-white hover:border-[#C48273]/50 shadow-2xs"
                     >
-                      <Icon className="w-3.5 h-3.5 opacity-80" />
+                      <Icon className="w-3.5 h-3.5 shrink-0" />
                       <span className="sr-only">({item.platform} profile awaiting client confirmation)</span>
                       <span
                         aria-hidden="true"
