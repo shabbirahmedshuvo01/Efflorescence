@@ -10,7 +10,10 @@ export const featuredProducts: Product[] = [
     description: "A calming combination of soft lilac, delicate white seasonal blooms and fresh garden foliage, styled in our signature rustic wrap.",
     image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?q=80&w=1200&auto=format&fit=crop",
     badge: "Bestseller",
-    deliveryTime: "Same-day delivery available"
+    deliveryTime: "Same-day delivery available",
+    arrangementType: "bunch",
+    colorGroup: "pastel",
+    colorLabel: "Lilac & Pastel"
   },
   {
     id: "florist-choice-box-design",
@@ -21,7 +24,10 @@ export const featuredProducts: Product[] = [
     description: "Our floral designers hand-select the freshest morning market stems, presented in an elegant presentation box in water bubble.",
     image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200&auto=format&fit=crop",
     badge: "Signature Gift",
-    deliveryTime: "Arrives in water bubble"
+    deliveryTime: "Arrives in water bubble",
+    arrangementType: "box",
+    colorGroup: "warm",
+    colorLabel: "Warm & Peach"
   },
   {
     id: "hat-box-florist-choice",
@@ -32,7 +38,10 @@ export const featuredProducts: Product[] = [
     description: "An opulent arrangement of premium focal blooms, roses, and textured greenery set directly inside a keepsake velvet-finish hat box.",
     image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=1200&auto=format&fit=crop",
     badge: "Keepsake",
-    deliveryTime: "No vase required"
+    deliveryTime: "No vase required",
+    arrangementType: "box",
+    colorGroup: "pastel",
+    colorLabel: "Rose & Pink"
   },
   {
     id: "handtied-bouquet-warm-glow",
@@ -43,7 +52,10 @@ export const featuredProducts: Product[] = [
     description: "Radiant golden, peach, and botanical amber tones balanced with wild eucalyptus and seasonal textured fillers.",
     image: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?q=80&w=1200&auto=format&fit=crop",
     badge: "Seasonal",
-    deliveryTime: "Same-day delivery available"
+    deliveryTime: "Same-day delivery available",
+    arrangementType: "bunch",
+    colorGroup: "warm",
+    colorLabel: "Amber & Warm Peach"
   },
   {
     id: "handtied-white-meadow",
@@ -54,7 +66,10 @@ export const featuredProducts: Product[] = [
     description: "Crisp white Ecuadorian roses, delicate veronica, white lisianthus, and fresh scented Lake District greenery.",
     image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=1200&auto=format&fit=crop",
     badge: "Popular",
-    deliveryTime: "Same-day delivery available"
+    deliveryTime: "Same-day delivery available",
+    arrangementType: "bunch",
+    colorGroup: "white",
+    colorLabel: "White & Cream"
   },
   {
     id: "botanical-foliage-bundle",
@@ -65,7 +80,10 @@ export const featuredProducts: Product[] = [
     description: "Wild textured British foliage, seeded eucalyptus, olive stems, and seasonal dried botanical accents.",
     image: "https://images.unsplash.com/photo-1508784411316-02b8cd4d3a3a?q=80&w=1200&auto=format&fit=crop",
     badge: "Studio Favourite",
-    deliveryTime: "Long-lasting vase stems"
+    deliveryTime: "Long-lasting vase stems",
+    arrangementType: "bunch",
+    colorGroup: "green",
+    colorLabel: "Botanical Green"
   },
   {
     id: "gift-box-blush-peony",
@@ -76,7 +94,10 @@ export const featuredProducts: Product[] = [
     description: "Pastel roses, seasonal blooms, and fresh scented greenery tucked inside an aqua-pack presentation gift box.",
     image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop",
     badge: "Aqua-Pack",
-    deliveryTime: "Arrives in water bubble"
+    deliveryTime: "Arrives in water bubble",
+    arrangementType: "box",
+    colorGroup: "pastel",
+    colorLabel: "Blush Pink"
   },
   {
     id: "hat-box-grand-celebration",
@@ -87,7 +108,10 @@ export const featuredProducts: Product[] = [
     description: "Pure ivory and blush garden roses arranged tightly with delicate trailing foliage in a bespoke keepsake box.",
     image: "https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=1200&auto=format&fit=crop",
     badge: "Signature",
-    deliveryTime: "No vase required"
+    deliveryTime: "No vase required",
+    arrangementType: "box",
+    colorGroup: "white",
+    colorLabel: "Ivory & Blush"
   }
 ];
 
