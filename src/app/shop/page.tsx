@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Navbar } from "@/components/layout/Navbar";
@@ -16,7 +17,9 @@ export default function ShopPage() {
       <Navbar />
 
       <main className="flex-1">
-        <ShopCatalogClient />
+        <Suspense fallback={<div className="py-20 text-center text-xs text-[#8E8A85]">Loading floral collection...</div>}>
+          <ShopCatalogClient />
+        </Suspense>
       </main>
 
       <Footer />
