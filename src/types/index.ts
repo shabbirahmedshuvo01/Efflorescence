@@ -8,6 +8,9 @@ export interface Product {
   image: string;
   badge?: string;
   deliveryTime?: string;
+  arrangementType?: "box" | "bunch";
+  colorGroup?: "white" | "pastel" | "warm" | "green";
+  colorLabel?: string;
 }
 
 export interface WeddingPackage {
@@ -38,4 +41,10 @@ export interface WorkshopItem {
 export interface NavItem {
   label: string;
   href: string;
+  children?: {
+    label: string;
+    href: string;
+    description?: string;
+  }[];
 }
+
